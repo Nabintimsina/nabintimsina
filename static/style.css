@@ -304,15 +304,15 @@ main{
     .menu_bar{
         font-size: 2rem;
     }
-    .mobile_nav .logo_name{
+    /* .mobile_nav .logo_name{
         display: flex;
         align-items: center;
-    }
-    .mobile_nav .logo_name img{
+    } */
+    /* .mobile_nav .logo_name img{
         width: 2rem;
         margin-right:0.5rem ;
         
-    }
+    } */
     .mobile_nav .logo_name p{
         font-size: var(--normal-size);
     }
