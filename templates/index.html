@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin Timsina</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon1.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/3f474993f4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="mobile_nav">
+            <div class="menu_bar" onclick="menu_click()"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo_name">
+                <img src="{{ url_for('static', filename='images/favicon1.png') }}" alt="Nabin logo" class="logo_img">
+                <p>Nabin</p>
+            </div>
+        </div>
+        <div class="header_wrapper">
+            <div class="header_top_container">
+                <div class="cross_sign" onclick="cross_sign_click()"><i class="fa-solid fa-xmark"></i></div>
+                <div class="header_image_container">
+                    <img src="{{ url_for('static', filename='images/header_img.png') }}" alt="Nabin Timsina">
+                </div>
+                <p class="header_name">Nabin Timsina</p>
+                <div class="background_overlay"></div>
+            </div>
+            <nav class="main_navbar">
+                <ul class="main_navbar_items " onclick="cross_sign_click()">
+                    <li class="main_navbar_item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="main_navbar_item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="main_navbar_item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="main_navbar_item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="main_navbar_item">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li class="main_navbar_item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links_container">
+                <ul class="social-link_list">
+                    <li class="social-links_item">
+                        <a href="https://www.facebook.com/timsinanabin8"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="social-links_item">
+                        <a href="https://github.com/Nabintimsina"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="social-links_item">
+                        <a href="https://www.youtube.com/c/NabinITenthusiast"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright_container">
+                <p>Copyright @ Nabin</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2 class="higher_z_index">Hi, Welcome</h2>
+            <h1 class="higher_z_index">I'm <span class="typed-text"></span><span class="cursor"> </span></h1>
+            <a role="button" href="#contact" class="contact_me_btn higher_z_index">Contact Me</a>
+            <a href="#about" class="go_down higher_z_index"><i class="fa-solid fa-angle-down"></i></a>
+            <div class="background_overlay"></div>
+        </section>
+        <section id="about">
+            <h1 class="section_big_title">ABOUT ME</h1>
+            <h2 class="section_small_title">Know me more</h2>
+            <hr class="section_title_underline">
+            <div class="about_container">
+                <h3 class="about_main_text">I'm Nabin Timsina, an IT enthusiast</h3>
+                <div class="about_image_des_container">
+                    <p class="about_des">
+                        I am a computer engineering student. I have intermediate knowledge in web development and basic
+                        knowledge in programming.
+                        I can develop simple website and can also handle basic things of database. Further, I can write
+                        basic programs in c, c++ and python.
+                        I also have basic knowledge of Microsoft office packages.
+                    </p>
+                    <div class="about_img_container">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                </div>
+                <div class="download_cv_container">
+                    <a href="#" role="button" class="download_cv_btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="section_big_title">SKILLS</h1>
+            <h2 class="section_small_title">What can I do? </h2>
+            <hr class="section_title_underline">
+            <div class="skills_container">
+                <div class="skill_item">
+                    <div class="skill_logo"><i class="fa-solid fa-code"></i></div>
+                    <div class="skill_text">
+                        <h3 class="skill_item_title">HTML/CSS</h3>
+                        <p class="skill_des">I can make simple website using html, css and basic javascript.</p>
+                    </div>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_logo"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="skill_text">
+                        <h3 class="skill_item_title">Microsoft Office</h3>
+                        <p class="skill_des">I can do simple works based on Ms Word, Ms Excel, Ms powerpoint</p>
+                    </div>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_logo"><i class="fa-brands fa-python"></i></div>
+                    <div class="skill_text">
+                        <h3 class="skill_item_title">Python Programming</h3>
+                        <p class="skill_des">I can write basic programs using python. I also have knowledge of some frameworks such as flask</p>
+                    </div>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_logo"><i class="fa-brands fa-blogger-b"></i></div>
+                    <div class="skill_text">
+                        <h3 class="skill_item_title">Blogger</h3>
+                        <p class="skill_des">I can design websites using blogger.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="section_big_title">PROJECTS</h1>
+            <h2 class="section_small_title">My works</h2>
+            <hr class="section_title_underline">
+            <div class="projects_container">
+                <a role="button" class="slide_change_btn" onclick="plusDivs(-1)"><i
+                        class="fa-solid fa-chevron-left"></i></a>
+                <div class="project_slides">
+                    <a href="https://github.com/Nabintimsina/electricity_bill_calculator_in_C/blob/main/bill.c" class="project_slide_image"><img
+                            src="https://source.unsplash.com/featured/?{code}" alt="Image"></a>
+                    <div class="project_slide_middle">
+                        <div class="project_slide_text">Electricity bill calculator in C</div>
+                    </div>
+                </div>
+                <div class="project_slides">
+                    <a href="https://nabintimsina.github.io/mahendraschool/" class="project_slide_image"><img
+                            src="https://source.unsplash.com/featured/?{computer},{programming}" alt="Image"></a>
+                    <div class="project_slide_middle">
+                        <div class="project_slide_text">School Website</div>
+                    </div>
+                </div>
+                <a role="button" class="slide_change_btn" onclick="plusDivs(1)"><i
+                        class="fa-solid fa-chevron-right"></i></a>
+
+            </div>
+        </section>
+        <section id="blog">
+            <h1 class="section_big_title">BLOG</h1>
+            <h2 class="section_small_title">Newly Posted Articles</h2>
+            <hr class="section_title_underline">
+            <div class="blog_container">
+                <a role="button" class="blog_pre_btn slide_change_btn" onclick="change_slide(-1)"><i
+                        class="fa-solid fa-chevron-left"></i></a>
+                <div class="blog_item">
+                    <div class="blog_item_img_container">
+                        <img src="https://source.unsplash.com/featured/?{books},{programming},{code}" alt="Imgae">
+                    </div>
+                    <div class="blog_item_des">
+                        <p class="blog_date">Jan 12, 2022</p>
+                        <h3 class="blog_heading">Comming soon</h3>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_img_container">
+                        <img src="https://source.unsplash.com/featured/?{computer}{programming},{code}" alt="Imgae">
+                    </div>
+                    <div class="blog_item_des">
+                        <p class="blog_date">Jan 12, 2022</p>
+                        <h3 class="blog_heading">Comming soon</h3>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_img_container">
+                        <img src="https://source.unsplash.com/featured/?{programming},{code}" alt="Imgae">
+                    </div>
+                    <div class="blog_item_des">
+                        <p class="blog_date">Jan 12, 2022</p>
+                        <h3 class="blog_heading">Comming soon</h3>
+                    </div>
+                </div>
+
+                <a role="button" class="blog_next_btn slide_change_btn" onclick="change_slide(1)"><i
+                        class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </section>
+        <section id="contact">
+            {% if is_sucess %}
+            <div class="form_sucess">
+                <h3>Message sent sucessfully!</h3>
+                <a role="button" href="#" class="ok_btn" onclick="Remove_sucess_message()">Ok</a>
+            </div>
+            {% endif %}
+            <h1 class="section_big_title">CONTACT</h1>
+            <h2 class="section_small_title">Get in touch</h2>
+            <hr class="section_title_underline">
+            <div class="contact_me_wrapper">
+                <div class="form_container">
+                    <form method="POST" action="#contact" class="contact_form" novalidate>
+                        {{ form.csrf_token }}
+                        <div class="form_item">
+                            {% if form.name.errors %}
+                            <div class="errors">
+                                {% for error in form.name.errors %}
+                                <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {{ form.name(size=30, placeholder="Enter your name") }}
+                        </div>
+                        <div class="form_item">
+                            {% if form.email.errors %}
+                            <div class="errors">
+                                {% for error in form.email.errors %}
+                                <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {{ form.email(size=30,placeholder="Enter your email") }}
+                        </div>
+                        <div class="form_item">
+                            {% if form.message.errors %}
+                            <div class="errors">
+                                {% for error in form.message.errors %}
+                                <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {{ form.message( placeholder="Type message here")}}
+                        </div>
+                        <div class="form_item">{{ form.submit(size=30) }} </div>
+                    </form>
+                </div>
+                <div class="myinfo_container">
+                    <p><i class="info_icon fa-solid fa-location-dot"></i>Morang,Nepal </p>
+                    <p><i class="info_icon fa-solid fa-phone"></i>+9779804946126</p>
+                    <p><a href="mailto:timsinanabin8@gmail.com"><i
+                                class="info_icon fa-solid fa-envelope"></i>timsinanabin8@gmail.com </p></a>
+                    <h3 class="social_icon_heading">Follow me on </h3>
+                    <div class="social-links_container">
+                        <ul class="social-link_list">
+                            <li class="social-links_item">
+                                <a href="https://www.facebook.com/timsinanabin8"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="social-links_item">
+                                <a href="https://github.com/Nabintimsina"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li class="social-links_item">
+                                <a href="https://www.youtube.com/c/NabinITenthusiast"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% if is_sucess %}
+            <div class="background_overlay_contact"></div>
+            {% endif %}
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
