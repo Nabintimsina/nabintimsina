@@ -37,8 +37,8 @@ def index():
             name= contact_form.name.data
             email= contact_form.email.data
             message= contact_form.message.data
-
-            send_message_to_email(name= name, email= email, message= message)
+            if (name != 'Crytosuent') :
+                send_message_to_email(name= name, email= email, message= message)
 
             return render_template('index.html', is_sucess=True, form= contact_form)
 
